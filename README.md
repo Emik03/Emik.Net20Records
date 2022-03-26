@@ -8,7 +8,7 @@
 ---
 ## Prerequisite
 
-This library intentionally leaves out [`System.Runtime.CompilerServices.IsExternalInit`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.isexternalinit?view=net-6.0) to be able to be better integrated with other excellent polyfilling libraries such as [`Theraot.Core`](https://github.com/theraot/Theraot). Either use a package like [Manual Roemer 's `IsExternalInit`](https://nuget.org/packages/IsExternalInit), or define your own within the project:
+This library intentionally leaves out [`System.Runtime.CompilerServices.IsExternalInit`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.isexternalinit?view=net-6.0) to be able to be better integrated with other excellent polyfilling libraries such as [`Theraot.Core`](https://github.com/theraot/Theraot). Either use a package like [Manual Roemer's `IsExternalInit`](https://nuget.org/packages/IsExternalInit), or define your own within the project:
 
 ```cs
 using System.ComponentModel;

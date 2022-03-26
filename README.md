@@ -1,7 +1,7 @@
 # Emik.Net20Records
 
 [![NuGet](https://img.shields.io/nuget/v/Emik.Net20Records.svg?style=flat)](https://nuget.org/packages/Emik.Net20Records/)
-[![License](https://img.shields.io/github/license/emik03/emik.net20records.svg?style=flat)](https://github.com/Emik03/Emik.Net20Records/blob/main/LICENSE.md)
+[![License](https://img.shields.io/github/license/Emik03/Emik.Net20Records.svg?style=flat)](https://github.com/Emik03/Emik.Net20Records/blob/main/LICENSE.md)
 
 > Adds C# 9/10's record/record struct support for .NET Framework 2, 3, and 3.5.
 

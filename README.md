@@ -35,5 +35,5 @@ This library adds record and record struct functionality for old .NET Frameworks
 ## Contribute
 
 As with most [GitHub](https://github.com/) repositories, you can contribute by:
-* [Creating an issue](https://github.com/Emik03/Net20Records/issues) to either address bugs, feature suggestions, or other changes.
+* [Creating an issue](https://github.com/Emik03/Emik.Net20Records/issues) to either address bugs, feature suggestions, or other changes.
 * [Creating/reviewing pull requests](https://github.com/Emik03/Emik.Net20Records/pulls) is also welcome.

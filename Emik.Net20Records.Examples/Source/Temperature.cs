@@ -1,4 +1,5 @@
-﻿
+﻿// <copyright file="Temperature.cs" company="Emik">Copyright (c) Emik. All rights reserved.</copyright>
+
 namespace Emik.Net20Records.Examples;
 
 internal static class Temperature

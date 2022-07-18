@@ -2,7 +2,6 @@
 
 namespace System;
 
-/// <inheritdoc cref="Type"/>
 public abstract partial class Type : SysType
 {
     /// <summary>Indicates whether two <see cref="Type"/> objects are equal.</summary>

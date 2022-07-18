@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyVersion>1</AssemblyVersion>
+    <AssemblyVersion>2</AssemblyVersion>
     <Authors>Emik</Authors>
     <Company>Emik</Company>
     <Copyright>Copyright © 2022</Copyright>
     <Description>Adds C# 9/10's record/record struct support for .NET Framework 2, 3, and 3.5.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <FileVersion>1</FileVersion>
+    <FileVersion>2</FileVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <LangVersion>preview</LangVersion>
@@ -18,7 +18,7 @@
     <RepositoryUrl>https://github.com/Emik03/Emik.Net20Records</RepositoryUrl>
     <TargetFramework>net20</TargetFramework>
     <Title>Emik.Net20Records</Title>
-    <Version>1</Version>
+    <Version>2</Version>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib">

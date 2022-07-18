@@ -38,14 +38,14 @@ internal sealed class Handle : Type
     public override PropertyInfo[] GetProperties(BindingFlags bindingAttr) => _fromHandler.GetProperties(bindingAttr);
     public override object InvokeMember(string name, BindingFlags invokeAttr, Binder binder, object target, object[] args, ParameterModifier[] modifiers, CultureInfo culture, string[] namedParameters) => _fromHandler.InvokeMember(name, invokeAttr, binder, target, args, modifiers, culture, namedParameters);
     public override bool IsDefined(SysType attributeType, bool inherit) => _fromHandler.IsDefined(attributeType, inherit);
-    protected override TypeAttributes GetAttributeFlagsImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, SysType[] types, ParameterModifier[] modifiers) => throw new ProtectedMethodFromHandleTypeException();
-    protected override MethodInfo GetMethodImpl(string name, BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, SysType[] types, ParameterModifier[] modifiers) => throw new ProtectedMethodFromHandleTypeException();
-    protected override PropertyInfo GetPropertyImpl(string name, BindingFlags bindingAttr, Binder binder, SysType returnType, SysType[] types, ParameterModifier[] modifiers) => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool HasElementTypeImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool IsArrayImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool IsByRefImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool IsCOMObjectImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool IsPointerImpl() => throw new ProtectedMethodFromHandleTypeException();
-    protected override bool IsPrimitiveImpl() => throw new ProtectedMethodFromHandleTypeException();
+    protected override TypeAttributes GetAttributeFlagsImpl() => _fromHandler.Attributes;
+    protected override ConstructorInfo GetConstructorImpl(BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, SysType[] types, ParameterModifier[] modifiers) => _fromHandler.GetConstructor(bindingAttr, binder, callConvention, types, modifiers);
+    protected override MethodInfo GetMethodImpl(string name, BindingFlags bindingAttr, Binder binder, CallingConventions callConvention, SysType[] types, ParameterModifier[] modifiers) => _fromHandler.GetMethod(name, bindingAttr, binder, callConvention, types, modifiers);
+    protected override PropertyInfo GetPropertyImpl(string name, BindingFlags bindingAttr, Binder binder, SysType returnType, SysType[] types, ParameterModifier[] modifiers) => _fromHandler.GetProperty(name, bindingAttr, binder, returnType, types, modifiers);
+    protected override bool HasElementTypeImpl() => _fromHandler.HasElementType;
+    protected override bool IsArrayImpl() => _fromHandler.IsArray;
+    protected override bool IsByRefImpl() => _fromHandler.IsByRef;
+    protected override bool IsCOMObjectImpl() => _fromHandler.IsCOMObject;
+    protected override bool IsPointerImpl() => _fromHandler.IsPointer;
+    protected override bool IsPrimitiveImpl() => _fromHandler.IsPrimitive;
 }

@@ -5,6 +5,27 @@
 
 > Adds C# 9/10's record/record struct support for .NET Framework 2, 3, and 3.5.
 
+--- 
+## Deprecated
+
+As of January 10th 2023, this library will no longer be maintained and is considered obsolete in favor of a better alternative:
+
+- Add [InlineIL.Fody](https://www.nuget.org/packages/InlineIL.Fody) as a dependency, setup of [Fody](https://www.nuget.org/packages/Fody) is required.
+
+- Download [this file](https://github.com/Emik03/Emik.Morsels/blob/main/References/mscorlib.dll); a modified version of the .NET Framework 3.5 binary.
+  - You can alternatively generate your own [using this snippet](https://gist.github.com/Emik03/d88efe49a874b7d5f45e4bfb96fa541f).
+
+- Reference this binary in your `.csproj`, or `Directory.Build.targets`:
+```xml
+<ItemGroup Condition="'$(TargetFramework)' == 'net35'">
+  <Reference Include="mscorlib" Aliases="global, ms" Private="false" HintPath="$(SharedPath)Emik.Morsels/References/mscorlib.dll" />
+</ItemGroup>
+```
+
+Refer to the prerequisite, then compile.
+
+For more information on how or why this works, [click here](https://github.com/Emik03/Emik.Morsels#modified-standard-library).
+
 ---
 ## Prerequisite
 
